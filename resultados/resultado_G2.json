@@ -1,0 +1,670 @@
+{
+  "instancia": "entrada_G2_red_15_nodos.json",
+  "supuestos_modelado": [
+    "La red es no dirigida porque cada pareja aparece una sola vez.",
+    "La utilidad de selección es cobertura ponderada saturada: F(S)=sum_v a_v*min(1, suma de influencias de S hacia v), con influencia propia igual a 1.",
+    "La selección se optimiza exactamente para el caso recibido, sujeta al cupo k y al costo máximo por ronda.",
+    "La utilidad de reparto es u_i(x)=a_i*ln(1+x); las unidades son enteras y la ganancia marginal disminuye.",
+    "Se usa el mismo grupo en todas las rondas y no se simulan fallas, porque el JSON no contiene estados ni probabilidades de falla.",
+    "El presupuesto total por nodo se interpreta como límite acumulado entre rondas.",
+    "Las utilidades y la interacción del grafo son una formalización provisional, no una fórmula confirmada por la profesora."
+  ],
+  "resultado": {
+    "nodos_seleccionados": [
+      "N01",
+      "N02",
+      "N03",
+      "N04",
+      "N05"
+    ],
+    "costo_participacion_del_grupo": 20,
+    "limite_costo_por_ronda": 24,
+    "utilidad_de_seleccion": 147.8,
+    "busqueda_seleccion": "enumeración exacta de grupos factibles",
+    "asignaciones_por_ronda": [
+      {
+        "ronda": 1,
+        "asignacion": {
+          "N01": 5,
+          "N02": 6,
+          "N03": 6,
+          "N04": 8,
+          "N05": 5
+        },
+        "unidades_repartidas": 30,
+        "traza_ganancias_marginales": [
+          {
+            "unidad": 1,
+            "nodo": "N04",
+            "ganancia_marginal": 8.317766,
+            "asignado_acumulado": 1
+          },
+          {
+            "unidad": 2,
+            "nodo": "N02",
+            "ganancia_marginal": 7.070101,
+            "asignado_acumulado": 1
+          },
+          {
+            "unidad": 3,
+            "nodo": "N03",
+            "ganancia_marginal": 6.307639,
+            "asignado_acumulado": 1
+          },
+          {
+            "unidad": 4,
+            "nodo": "N01",
+            "ganancia_marginal": 5.891751,
+            "asignado_acumulado": 1
+          },
+          {
+            "unidad": 5,
+            "nodo": "N05",
+            "ganancia_marginal": 5.406548,
+            "asignado_acumulado": 1
+          },
+          {
+            "unidad": 6,
+            "nodo": "N04",
+            "ganancia_marginal": 4.865581,
+            "asignado_acumulado": 2
+          },
+          {
+            "unidad": 7,
+            "nodo": "N02",
+            "ganancia_marginal": 4.135744,
+            "asignado_acumulado": 2
+          },
+          {
+            "unidad": 8,
+            "nodo": "N03",
+            "ganancia_marginal": 3.689732,
+            "asignado_acumulado": 2
+          },
+          {
+            "unidad": 9,
+            "nodo": "N04",
+            "ganancia_marginal": 3.452185,
+            "asignado_acumulado": 3
+          },
+          {
+            "unidad": 10,
+            "nodo": "N01",
+            "ganancia_marginal": 3.446453,
+            "asignado_acumulado": 2
+          },
+          {
+            "unidad": 11,
+            "nodo": "N05",
+            "ganancia_marginal": 3.162628,
+            "asignado_acumulado": 2
+          },
+          {
+            "unidad": 12,
+            "nodo": "N02",
+            "ganancia_marginal": 2.934357,
+            "asignado_acumulado": 3
+          },
+          {
+            "unidad": 13,
+            "nodo": "N04",
+            "ganancia_marginal": 2.677723,
+            "asignado_acumulado": 4
+          },
+          {
+            "unidad": 14,
+            "nodo": "N03",
+            "ganancia_marginal": 2.617907,
+            "asignado_acumulado": 3
+          },
+          {
+            "unidad": 15,
+            "nodo": "N01",
+            "ganancia_marginal": 2.445298,
+            "asignado_acumulado": 3
+          },
+          {
+            "unidad": 16,
+            "nodo": "N02",
+            "ganancia_marginal": 2.276064,
+            "asignado_acumulado": 4
+          },
+          {
+            "unidad": 17,
+            "nodo": "N05",
+            "ganancia_marginal": 2.24392,
+            "asignado_acumulado": 3
+          },
+          {
+            "unidad": 18,
+            "nodo": "N04",
+            "ganancia_marginal": 2.187859,
+            "asignado_acumulado": 5
+          },
+          {
+            "unidad": 19,
+            "nodo": "N03",
+            "ganancia_marginal": 2.030606,
+            "asignado_acumulado": 4
+          },
+          {
+            "unidad": 20,
+            "nodo": "N01",
+            "ganancia_marginal": 1.89672,
+            "asignado_acumulado": 4
+          },
+          {
+            "unidad": 21,
+            "nodo": "N02",
+            "ganancia_marginal": 1.85968,
+            "asignado_acumulado": 5
+          },
+          {
+            "unidad": 22,
+            "nodo": "N04",
+            "ganancia_marginal": 1.849808,
+            "asignado_acumulado": 6
+          },
+          {
+            "unidad": 23,
+            "nodo": "N05",
+            "ganancia_marginal": 1.74052,
+            "asignado_acumulado": 4
+          },
+          {
+            "unidad": 24,
+            "nodo": "N03",
+            "ganancia_marginal": 1.659126,
+            "asignado_acumulado": 5
+          },
+          {
+            "unidad": 25,
+            "nodo": "N04",
+            "ganancia_marginal": 1.602377,
+            "asignado_acumulado": 7
+          },
+          {
+            "unidad": 26,
+            "nodo": "N02",
+            "ganancia_marginal": 1.572337,
+            "asignado_acumulado": 6
+          },
+          {
+            "unidad": 27,
+            "nodo": "N01",
+            "ganancia_marginal": 1.549733,
+            "asignado_acumulado": 5
+          },
+          {
+            "unidad": 28,
+            "nodo": "N05",
+            "ganancia_marginal": 1.422108,
+            "asignado_acumulado": 5
+          },
+          {
+            "unidad": 29,
+            "nodo": "N04",
+            "ganancia_marginal": 1.413396,
+            "asignado_acumulado": 8
+          },
+          {
+            "unidad": 30,
+            "nodo": "N03",
+            "ganancia_marginal": 1.402771,
+            "asignado_acumulado": 6
+          }
+        ]
+      },
+      {
+        "ronda": 2,
+        "asignacion": {
+          "N01": 6,
+          "N02": 7,
+          "N03": 5,
+          "N04": 7,
+          "N05": 5
+        },
+        "unidades_repartidas": 30,
+        "traza_ganancias_marginales": [
+          {
+            "unidad": 1,
+            "nodo": "N02",
+            "ganancia_marginal": 1.36202,
+            "asignado_acumulado": 7
+          },
+          {
+            "unidad": 2,
+            "nodo": "N01",
+            "ganancia_marginal": 1.310281,
+            "asignado_acumulado": 6
+          },
+          {
+            "unidad": 3,
+            "nodo": "N04",
+            "ganancia_marginal": 1.264326,
+            "asignado_acumulado": 9
+          },
+          {
+            "unidad": 4,
+            "nodo": "N03",
+            "ganancia_marginal": 1.215136,
+            "asignado_acumulado": 7
+          },
+          {
+            "unidad": 5,
+            "nodo": "N05",
+            "ganancia_marginal": 1.202375,
+            "asignado_acumulado": 6
+          },
+          {
+            "unidad": 6,
+            "nodo": "N02",
+            "ganancia_marginal": 1.201387,
+            "asignado_acumulado": 8
+          },
+          {
+            "unidad": 7,
+            "nodo": "N04",
+            "ganancia_marginal": 1.143722,
+            "asignado_acumulado": 10
+          },
+          {
+            "unidad": 8,
+            "nodo": "N01",
+            "ganancia_marginal": 1.135017,
+            "asignado_acumulado": 7
+          },
+          {
+            "unidad": 9,
+            "nodo": "N02",
+            "ganancia_marginal": 1.074677,
+            "asignado_acumulado": 9
+          },
+          {
+            "unidad": 10,
+            "nodo": "N03",
+            "ganancia_marginal": 1.071826,
+            "asignado_acumulado": 8
+          },
+          {
+            "unidad": 11,
+            "nodo": "N04",
+            "ganancia_marginal": 1.044137,
+            "asignado_acumulado": 11
+          },
+          {
+            "unidad": 12,
+            "nodo": "N05",
+            "ganancia_marginal": 1.041545,
+            "asignado_acumulado": 7
+          },
+          {
+            "unidad": 13,
+            "nodo": "N01",
+            "ganancia_marginal": 1.001156,
+            "asignado_acumulado": 8
+          },
+          {
+            "unidad": 14,
+            "nodo": "N02",
+            "ganancia_marginal": 0.972164,
+            "asignado_acumulado": 10
+          },
+          {
+            "unidad": 15,
+            "nodo": "N04",
+            "ganancia_marginal": 0.960512,
+            "asignado_acumulado": 12
+          },
+          {
+            "unidad": 16,
+            "nodo": "N03",
+            "ganancia_marginal": 0.958781,
+            "asignado_acumulado": 9
+          },
+          {
+            "unidad": 17,
+            "nodo": "N05",
+            "ganancia_marginal": 0.918708,
+            "asignado_acumulado": 8
+          },
+          {
+            "unidad": 18,
+            "nodo": "N01",
+            "ganancia_marginal": 0.895564,
+            "asignado_acumulado": 9
+          },
+          {
+            "unidad": 19,
+            "nodo": "N04",
+            "ganancia_marginal": 0.889296,
+            "asignado_acumulado": 13
+          },
+          {
+            "unidad": 20,
+            "nodo": "N02",
+            "ganancia_marginal": 0.887516,
+            "asignado_acumulado": 11
+          },
+          {
+            "unidad": 21,
+            "nodo": "N03",
+            "ganancia_marginal": 0.867323,
+            "asignado_acumulado": 10
+          },
+          {
+            "unidad": 22,
+            "nodo": "N04",
+            "ganancia_marginal": 0.827914,
+            "asignado_acumulado": 14
+          },
+          {
+            "unidad": 23,
+            "nodo": "N05",
+            "ganancia_marginal": 0.821812,
+            "asignado_acumulado": 9
+          },
+          {
+            "unidad": 24,
+            "nodo": "N02",
+            "ganancia_marginal": 0.816436,
+            "asignado_acumulado": 12
+          },
+          {
+            "unidad": 25,
+            "nodo": "N01",
+            "ganancia_marginal": 0.810137,
+            "asignado_acumulado": 10
+          },
+          {
+            "unidad": 26,
+            "nodo": "N03",
+            "ganancia_marginal": 0.791804,
+            "asignado_acumulado": 11
+          },
+          {
+            "unidad": 27,
+            "nodo": "N04",
+            "ganancia_marginal": 0.774462,
+            "asignado_acumulado": 15
+          },
+          {
+            "unidad": 28,
+            "nodo": "N02",
+            "ganancia_marginal": 0.755901,
+            "asignado_acumulado": 13
+          },
+          {
+            "unidad": 29,
+            "nodo": "N05",
+            "ganancia_marginal": 0.743419,
+            "asignado_acumulado": 10
+          },
+          {
+            "unidad": 30,
+            "nodo": "N01",
+            "ganancia_marginal": 0.739597,
+            "asignado_acumulado": 11
+          }
+        ]
+      },
+      {
+        "ronda": 3,
+        "asignacion": {
+          "N01": 7,
+          "N02": 5,
+          "N03": 7,
+          "N04": 3,
+          "N05": 8
+        },
+        "unidades_repartidas": 30,
+        "traza_ganancias_marginales": [
+          {
+            "unidad": 1,
+            "nodo": "N03",
+            "ganancia_marginal": 0.728389,
+            "asignado_acumulado": 12
+          },
+          {
+            "unidad": 2,
+            "nodo": "N04",
+            "ganancia_marginal": 0.727495,
+            "asignado_acumulado": 16
+          },
+          {
+            "unidad": 3,
+            "nodo": "N02",
+            "ganancia_marginal": 0.703727,
+            "asignado_acumulado": 14
+          },
+          {
+            "unidad": 4,
+            "nodo": "N04",
+            "ganancia_marginal": 0.685901,
+            "asignado_acumulado": 17
+          },
+          {
+            "unidad": 5,
+            "nodo": "N01",
+            "ganancia_marginal": 0.680363,
+            "asignado_acumulado": 12
+          },
+          {
+            "unidad": 6,
+            "nodo": "N05",
+            "ganancia_marginal": 0.678689,
+            "asignado_acumulado": 11
+          },
+          {
+            "unidad": 7,
+            "nodo": "N03",
+            "ganancia_marginal": 0.674383,
+            "asignado_acumulado": 13
+          },
+          {
+            "unidad": 8,
+            "nodo": "N02",
+            "ganancia_marginal": 0.658293,
+            "asignado_acumulado": 15
+          },
+          {
+            "unidad": 9,
+            "nodo": "N04",
+            "ganancia_marginal": 0.648807,
+            "asignado_acumulado": 18
+          },
+          {
+            "unidad": 10,
+            "nodo": "N01",
+            "ganancia_marginal": 0.629918,
+            "asignado_acumulado": 13
+          },
+          {
+            "unidad": 11,
+            "nodo": "N03",
+            "ganancia_marginal": 0.627835,
+            "asignado_acumulado": 14
+          },
+          {
+            "unidad": 12,
+            "nodo": "N05",
+            "ganancia_marginal": 0.624333,
+            "asignado_acumulado": 12
+          },
+          {
+            "unidad": 13,
+            "nodo": "N02",
+            "ganancia_marginal": 0.618371,
+            "asignado_acumulado": 16
+          },
+          {
+            "unidad": 14,
+            "nodo": "N03",
+            "ganancia_marginal": 0.587301,
+            "asignado_acumulado": 15
+          },
+          {
+            "unidad": 15,
+            "nodo": "N01",
+            "ganancia_marginal": 0.586439,
+            "asignado_acumulado": 14
+          },
+          {
+            "unidad": 16,
+            "nodo": "N02",
+            "ganancia_marginal": 0.583016,
+            "asignado_acumulado": 17
+          },
+          {
+            "unidad": 17,
+            "nodo": "N05",
+            "ganancia_marginal": 0.578042,
+            "asignado_acumulado": 13
+          },
+          {
+            "unidad": 18,
+            "nodo": "N03",
+            "ganancia_marginal": 0.551684,
+            "asignado_acumulado": 16
+          },
+          {
+            "unidad": 19,
+            "nodo": "N02",
+            "ganancia_marginal": 0.551486,
+            "asignado_acumulado": 18
+          },
+          {
+            "unidad": 20,
+            "nodo": "N01",
+            "ganancia_marginal": 0.548577,
+            "asignado_acumulado": 15
+          },
+          {
+            "unidad": 21,
+            "nodo": "N05",
+            "ganancia_marginal": 0.538144,
+            "asignado_acumulado": 14
+          },
+          {
+            "unidad": 22,
+            "nodo": "N03",
+            "ganancia_marginal": 0.520142,
+            "asignado_acumulado": 17
+          },
+          {
+            "unidad": 23,
+            "nodo": "N01",
+            "ganancia_marginal": 0.515309,
+            "asignado_acumulado": 16
+          },
+          {
+            "unidad": 24,
+            "nodo": "N05",
+            "ganancia_marginal": 0.5034,
+            "asignado_acumulado": 15
+          },
+          {
+            "unidad": 25,
+            "nodo": "N03",
+            "ganancia_marginal": 0.492012,
+            "asignado_acumulado": 18
+          },
+          {
+            "unidad": 26,
+            "nodo": "N01",
+            "ganancia_marginal": 0.485847,
+            "asignado_acumulado": 17
+          },
+          {
+            "unidad": 27,
+            "nodo": "N05",
+            "ganancia_marginal": 0.472872,
+            "asignado_acumulado": 16
+          },
+          {
+            "unidad": 28,
+            "nodo": "N01",
+            "ganancia_marginal": 0.459571,
+            "asignado_acumulado": 18
+          },
+          {
+            "unidad": 29,
+            "nodo": "N05",
+            "ganancia_marginal": 0.445836,
+            "asignado_acumulado": 17
+          },
+          {
+            "unidad": 30,
+            "nodo": "N05",
+            "ganancia_marginal": 0.421724,
+            "asignado_acumulado": 18
+          }
+        ]
+      }
+    ],
+    "uso_acumulado_por_nodo": {
+      "N01": 18,
+      "N02": 18,
+      "N03": 18,
+      "N04": 18,
+      "N05": 18
+    },
+    "restricciones": {
+      "cupo_cumplido": true,
+      "costo_cumplido": true,
+      "presupuesto_ruido_por_ronda_cumplido": true,
+      "limite_total_por_nodo_cumplido": true
+    },
+    "traza_seleccion": [
+      {
+        "grupos_totales": 3003,
+        "grupos_factibles_evaluados": 1966
+      },
+      {
+        "nuevas_mejoras": [
+          "N01",
+          "N02",
+          "N03",
+          "N04",
+          "N05"
+        ],
+        "costo": 20,
+        "utilidad": 147.8
+      }
+    ],
+    "traza_ganancias_marginales_seleccion": [
+      {
+        "nodo_agregado": "N01",
+        "utilidad_antes": 0.0,
+        "utilidad_despues": 74.11,
+        "ganancia_marginal": 74.11
+      },
+      {
+        "nodo_agregado": "N02",
+        "utilidad_antes": 74.11,
+        "utilidad_despues": 126.58,
+        "ganancia_marginal": 52.47
+      },
+      {
+        "nodo_agregado": "N03",
+        "utilidad_antes": 126.58,
+        "utilidad_despues": 140.905,
+        "ganancia_marginal": 14.325
+      },
+      {
+        "nodo_agregado": "N04",
+        "utilidad_antes": 140.905,
+        "utilidad_despues": 146.14,
+        "ganancia_marginal": 5.235
+      },
+      {
+        "nodo_agregado": "N05",
+        "utilidad_antes": 146.14,
+        "utilidad_despues": 147.8,
+        "ganancia_marginal": 1.66
+      }
+    ],
+    "combinaciones_posibles": 3003,
+    "tiempo_ejecucion_segundos": 0.135785
+  }
+}
